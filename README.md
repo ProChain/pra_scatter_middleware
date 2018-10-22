@@ -1,4 +1,11 @@
 # pra_scatter_middleware
+
+![Pra](https://github.com/Prochain/pra_scatter/raw/master/pic/pra.png)
+
+![Pra](https://github.com/Prochain/pra_scatter/raw/master/pic/scatter.png)
+
+
+
 a scatter protocol sample for mobile on EOS chain
 
 
