@@ -3,6 +3,7 @@ a scatter protocol sample for mobile on EOS chain
 
 
 (1)About scatter
+
 scatter is the most used wallet protocol on EOS chain. 
 
 Scatter is a browser extension that allows you to sign transactions for multiple blockchains and provide personal information to web applications without ever exposing your keys or filling out forms.
@@ -14,6 +15,7 @@ https://github.com/GetScatter/ScatterWebExtension
 
 
 (2)why scatter_middleware
+
 while scatter is famous on Chrome as a plugin,  it is not friendly in mobile currently, there are more than 30 EOS mobile wallet in the market, but the dapps are usually deploy as web version first, 
 this middle sovle the problem of the web dapp [EOS] 's sign transaction problem while running on mobile browser.
 
@@ -25,15 +27,21 @@ this middle sovle the problem of the web dapp [EOS] 's sign transaction problem 
 (3)how to use
 
 [3.1] For iOS
+
 1. Copy pra_middleware.js file into your project,
+
 2. implementation a scatterWebview controller similar with the on in iOS/PCScatterViewContrller
 you need to using your local native EOS wallet to replace the folowing function
 
 
 -(void)scatter_getIdentity:(NSString*)callbackUrl
+
 -(void)scatter_ForgetIdentity:(NSString*)callbackUrl
+
 -(void)scatter_authenticate:(NSString*)key withCallback:(NSString*)callbackUrl
+
 -(void)scatter_getArbitrarySignature:(NSString*)signData;
+
 -(void)scatter_transaction:(NSString*)callbackUrl withParams:(NSDictionary*)params
 
 3. using your customize webview to load any url support scatter protocol ,
@@ -46,9 +54,11 @@ play with EOS chain.
 
 
 
-
+=====================================================
 
 [3.2] For Android
+
+
 1. Copy pra_middleware.js file into your project,
 2. implemetation web interface contains the following logic
 
@@ -62,14 +72,18 @@ scatterWebInterface:
                                
                                
                                
-    @JavascriptInterface
+                               
+                               
+@JavascriptInterface
     public void forgetIdentity(String contract,
                                String action,
                                String param,
                                String callbackStr)
                                
-                               
-  @JavascriptInterface
+
+
+
+@JavascriptInterface
     public String authenticate(String contract,
                                String action,
                                String param,
@@ -77,13 +91,18 @@ scatterWebInterface:
 
 
 
-  @JavascriptInterface
+
+
+@JavascriptInterface
     public String getArbitrarySignature(String contract,
                                         String action,
                                         String param,
                                         String callbackStr)
                                         
-  @JavascriptInterface
+
+
+
+@JavascriptInterface
     public void transaction(String contract,
                          String action,
                          String param,
@@ -91,6 +110,7 @@ scatterWebInterface:
                          
                          
 scatterWebview:
+
 implemetation the js inject, init the webview , 
 
 
