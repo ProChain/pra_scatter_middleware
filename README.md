@@ -1,8 +1,8 @@
 # pra_scatter_middleware
 
-![Pra](https://github.com/Prochain/pra_scatter/raw/master/pic/pra.png)
+![Pra](https://github.com/Prochain/pra_scatter_middleware/raw/master/pic/pra.png)
 
-![Pra](https://github.com/Prochain/pra_scatter/raw/master/pic/scatter.png)
+![Pra](https://github.com/Prochain/pra_scatter_middleware/raw/master/pic/scatter.png)
 
 
 
