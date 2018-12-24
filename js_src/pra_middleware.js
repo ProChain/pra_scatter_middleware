@@ -1,1 +1,749 @@
-var _0xe23e=["\x76\x61\x6C\x75\x65","\x73\x74\x61\x74\x75\x73","\x70\x65\x6E\x64\x69\x6E\x67","\x72\x65\x73\x6F\x6C\x76\x65\x46\x75\x6E\x63","\x72\x65\x6A\x65\x63\x74\x46\x75\x6E\x63","\x62\x69\x6E\x64","\x72\x65\x73\x6F\x6C\x76\x65","\x72\x65\x6A\x65\x63\x74","\x70\x72\x6F\x74\x6F\x74\x79\x70\x65","\x72\x65\x73\x6F\x6C\x76\x65\x64","\x72\x65\x6A\x65\x63\x74\x65\x64","\x74\x68\x65\x6E","\x66\x75\x6E\x63\x74\x69\x6F\x6E","\x72\x61\x6E\x64\x6F\x6D","\x70\x72\x61\x5F\x63\x61\x6C\x6C\x62\x61\x63\x6B\x5F","\x67\x65\x74\x54\x69\x6D\x65","\x75\x73\x65\x72\x41\x67\x65\x6E\x74","\x41\x6E\x64\x72\x6F\x69\x64","\x69\x6E\x64\x65\x78\x4F\x66","\x41\x64\x72","\x6D\x61\x74\x63\x68","\x69\x4F\x53","\x43\x75\x73\x74\x6F\x6D\x45\x76\x65\x6E\x74","\x63\x72\x65\x61\x74\x65\x45\x76\x65\x6E\x74","\x62\x75\x62\x62\x6C\x65\x73","\x63\x61\x6E\x63\x65\x6C\x61\x62\x6C\x65","\x64\x65\x74\x61\x69\x6C","\x69\x6E\x69\x74\x43\x75\x73\x74\x6F\x6D\x45\x76\x65\x6E\x74","\x45\x76\x65\x6E\x74","\x70\x6F\x73\x74\x4D\x65\x73\x73\x61\x67\x65","\x50\x72\x6F\x63\x68\x61\x69\x6E","\x6D\x65\x73\x73\x61\x67\x65\x48\x61\x6E\x64\x6C\x65\x72\x73","\x77\x65\x62\x6B\x69\x74","\x63\x68\x61\x69\x6E\x49\x64","\x70\x72\x6F\x74\x6F\x63\x6F\x6C","\x68\x74\x74\x70\x73","\x70\x6F\x72\x74","","\x3A","\x3A\x2F\x2F","\x68\x6F\x73\x74","\x6C\x6F\x67","\x74\x72\x61\x6E\x73\x61\x63\x74\x69\x6F\x6E","\x6F\x62\x6A\x65\x63\x74","\x73\x74\x72\x69\x6E\x67\x69\x66\x79","\x65\x72\x72\x6F\x72","\x6E\x6F\x6E\x65","\x53\x49\x47\x5F\x4B\x31\x5F\x4A\x76\x73\x39\x47\x6F\x69\x77\x35\x36\x4C\x58\x50\x54\x32\x53\x53\x42\x32\x76\x63\x41\x70\x36\x78\x32\x51\x34\x69\x64\x69\x63\x63\x5A\x37\x62\x76\x35\x34\x6F\x4B\x4D\x75\x33\x48\x32\x75\x31\x79\x41\x62\x63\x39\x58\x45\x44\x45\x53\x70\x35\x5A\x36\x73\x71\x41\x52\x53\x70\x6E\x4D\x42\x59\x6A\x4D\x65\x57\x79\x43\x75\x73\x62\x6D\x73\x65\x44\x79\x34\x63\x74\x59\x38\x4E\x33\x72","\x72\x65\x70\x6C\x61\x63\x65","\u5931\u8D25","\x73\x65\x61\x72\x63\x68","\x62\x72\x6F\x61\x64\x63\x61\x73\x74","\x74\x72\x61\x6E\x73\x61\x63\x74\x69\x6F\x6E\x3A","\x73\x70\x6C\x69\x74","\x74\x72\x61\x6E\x73\x61\x63\x74\x69\x6F\x6E\x5F\x69\x64","\x63\x6F\x6E\x74\x72\x61\x63\x74\x5F\x61\x6C\x6C","\x6C\x65\x6E\x67\x74\x68","\x74\x72\x61\x6E\x73\x66\x65\x72","\x72\x65\x73\x75\x6C\x74","\x65\x6F\x73\x69\x6F\x2E\x74\x6F\x6B\x65\x6E","\x63\x6F\x6E\x74\x72\x61\x63\x74","\x73\x74\x72\x69\x6E\x67","\x69\x64\x65\x6E\x74\x69\x74\x79","\x65\x6F\x73","\x69\x73\x45\x78\x74\x65\x6E\x73\x69\x6F\x6E","\x76\x65\x72\x73\x69\x6F\x6E","\x31\x2E\x30\x2E\x30","\x73\x63\x61\x74\x74\x65\x72\x4C\x6F\x61\x64\x65\x64","\x64\x69\x73\x70\x61\x74\x63\x68\x45\x76\x65\x6E\x74","\x6D\x65\x73\x73\x61\x67\x65","\x74\x79\x70\x65","\x64\x61\x74\x61","\x63\x61\x6C\x6C\x62\x61\x63\x6B","\x6E\x61\x6D\x65","\x6D\x73\x67","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x63\x6F\x6E\x6E\x65\x63\x74","\x59\x6F\x75\x20\x6D\x75\x73\x74\x20\x73\x70\x65\x63\x69\x66\x79\x20\x61\x20\x6E\x61\x6D\x65\x20\x66\x6F\x72\x20\x74\x68\x69\x73\x20\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E","\x61\x73\x73\x69\x67\x6E","\x70\x61\x72\x73\x65","\x64\x69\x73\x63\x6F\x6E\x6E\x65\x63\x74","\x69\x73\x43\x6F\x6E\x6E\x65\x63\x74\x65\x64","\x73\x63\x61\x74\x74\x65\x72","\x69\x73\x50\x61\x69\x72\x65\x64","\x70\x75\x62\x6C\x69\x63\x4B\x65\x79","\x67\x65\x74\x56\x65\x72\x73\x69\x6F\x6E","\x67\x65\x74\x49\x64\x65\x6E\x74\x69\x74\x79","\x38\x33\x39\x31\x61\x33\x38\x65\x30\x64\x66\x32\x61\x37\x64\x39\x34\x35\x31\x38\x62\x36\x65\x63\x61\x62\x66\x30\x63\x65\x30\x33\x39\x32\x35\x62\x33\x34\x65\x35\x65\x62\x36\x35\x63\x34\x61\x32\x34\x36\x62\x33\x38\x61\x31\x62\x66\x36\x30\x38\x35\x33\x34\x38","\x52\x61\x6E\x64\x6F\x6D\x52\x61\x67\x64\x6F\x6C\x6C\x35\x33\x34\x32\x34\x37\x36","\x61\x63\x74\x69\x76\x65","\x2C","\x61\x63\x63\x6F\x75\x6E\x74\x73","\x67\x65\x74\x49\x64\x65\x6E\x74\x69\x74\x79\x46\x72\x6F\x6D\x50\x65\x72\x6D\x69\x73\x73\x69\x6F\x6E\x73","\x61\x75\x74\x68\x65\x6E\x74\x69\x63\x61\x74\x65","\x73\x75\x67\x67\x65\x73\x74\x4E\x65\x74\x77\x6F\x72\x6B","\x66\x6F\x72\x67\x65\x74\x49\x64\x65\x6E\x74\x69\x74\x79","\x67\x65\x74\x41\x72\x62\x69\x74\x72\x61\x72\x79\x53\x69\x67\x6E\x61\x74\x75\x72\x65","\x67\x65\x74\x50\x75\x62\x6C\x69\x63\x4B\x65\x79","\x75\x6E\x64\x65\x66\x69\x6E\x65\x64","\x53\x63\x61\x74\x74\x65\x72\x4A\x53","\x53\x63\x61\x74\x74\x65\x72\x4A\x53\x20\x64\x6F\x65\x73\x20\x6E\x6F\x74\x20\x65\x78\x73\x69\x74"];function MyPromise(_0xd6f6x2){this[_0xe23e[0]];this[_0xe23e[1]]= _0xe23e[2];this[_0xe23e[3]]= function(){};this[_0xe23e[4]]= function(){};_0xd6f6x2(this[_0xe23e[6]][_0xe23e[5]](this),this[_0xe23e[7]][_0xe23e[5]](this))}MyPromise[_0xe23e[8]]= {resolve:function(_0xd6f6x3){var _0xd6f6x4=this;if(this[_0xe23e[1]]== _0xe23e[2]){this[_0xe23e[1]]= _0xe23e[9];this[_0xe23e[0]]= _0xd6f6x3;setTimeout(function(){_0xd6f6x4[_0xe23e[3]](_0xd6f6x4[_0xe23e[0]])},0)}},reject:function(_0xd6f6x3){var _0xd6f6x4=this;if(this[_0xe23e[1]]== _0xe23e[2]){this[_0xe23e[1]]= _0xe23e[10];this[_0xe23e[0]]= _0xd6f6x3;setTimeout(function(){_0xd6f6x4[_0xe23e[4]](_0xd6f6x4[_0xe23e[0]])},0)}},then:function(_0xd6f6x5,_0xd6f6x6){var _0xd6f6x4=this;return  new MyPromise(function(_0xd6f6x7,_0xd6f6x8){function _0xd6f6x9(){var _0xd6f6xa=_0xd6f6x5(_0xd6f6x4[_0xe23e[0]]);if(_0xd6f6xa&&  typeof _0xd6f6xa[_0xe23e[11]]=== _0xe23e[12]){_0xd6f6xa[_0xe23e[11]](_0xd6f6x7,_0xd6f6x8)}else {_0xd6f6x7(_0xd6f6xa)}}function _0xd6f6xb(){if( typeof _0xd6f6x6!== _0xe23e[12]){_0xd6f6x6= function(){return _0xd6f6x4[_0xe23e[0]]}};var _0xd6f6xa=_0xd6f6x6(_0xd6f6x4[_0xe23e[0]]);if(_0xd6f6xa&&  typeof _0xd6f6xa[_0xe23e[11]]=== _0xe23e[12]){_0xd6f6xa[_0xe23e[11]](_0xd6f6x7,_0xd6f6x8)}else {_0xd6f6x8(_0xd6f6xa)}}_0xd6f6x4[_0xe23e[3]]= _0xd6f6x9;_0xd6f6x4[_0xe23e[4]]= _0xd6f6xb})},catch:function(_0xd6f6x5){var _0xd6f6x4=this;return  new MyPromise(function(_0xd6f6x7,_0xd6f6x8){function _0xd6f6x9(){if(_0xd6f6x4[_0xe23e[1]]!== _0xe23e[9]){var _0xd6f6xa=_0xd6f6x5(_0xd6f6x4[_0xe23e[0]]);if(_0xd6f6xa&&  typeof _0xd6f6xa[_0xe23e[11]]=== _0xe23e[12]){_0xd6f6xa[_0xe23e[11]](_0xd6f6x7,_0xd6f6x8)}else {_0xd6f6x7(_0xd6f6xa)}}}function _0xd6f6xb(){var _0xd6f6xa=_0xd6f6x5(_0xd6f6x4[_0xe23e[0]]);if(_0xd6f6xa&&  typeof _0xd6f6xa[_0xe23e[11]]=== _0xe23e[12]){_0xd6f6xa[_0xe23e[11]](_0xd6f6x7,_0xd6f6x8)}else {_0xd6f6x7(_0xd6f6xa)}}_0xd6f6x4[_0xe23e[3]]= _0xd6f6x9;_0xd6f6x4[_0xe23e[4]]= _0xd6f6xb})}};var getCallbackName=function(){var _0xd6f6xd=parseInt(Math[_0xe23e[13]]()* 100000);return _0xe23e[14]+  new Date()[_0xe23e[15]]()+ _0xd6f6xd};var getOperatingSystem=function(){var _0xd6f6xf=navigator[_0xe23e[16]];var _0xd6f6x10=_0xd6f6xf[_0xe23e[18]](_0xe23e[17])>  -1|| _0xd6f6xf[_0xe23e[18]](_0xe23e[19])>  -1;var _0xd6f6x11=!!_0xd6f6xf[_0xe23e[20]](/\(i[^;]+;( U;)? CPU.+Mac OS X/);if(_0xd6f6x10){return _0xe23e[17]}else {if(_0xd6f6x11){return _0xe23e[21]}}};var createCustomEvent=function(){if( typeof window[_0xe23e[22]]=== _0xe23e[12]){return false};function _0xd6f6x13(_0xd6f6x14,_0xd6f6x15){_0xd6f6x15= _0xd6f6x15|| {bubbles:false,cancelable:false,detail:undefined};var _0xd6f6x16=document[_0xe23e[23]](_0xe23e[22]);_0xd6f6x16[_0xe23e[27]](_0xd6f6x14,_0xd6f6x15[_0xe23e[24]],_0xd6f6x15[_0xe23e[25]],_0xd6f6x15[_0xe23e[26]]);return _0xd6f6x16}_0xd6f6x13[_0xe23e[8]]= window[_0xe23e[28]][_0xe23e[8]];window[_0xe23e[22]]= _0xd6f6x13};var sendPraRequest=function(_0xd6f6x18,_0xd6f6x19,_0xd6f6x1a,_0xd6f6x15,_0xd6f6x1b){var _0xd6f6x1c=getOperatingSystem();if(_0xd6f6x1c=== _0xe23e[17]){Prochain[_0xd6f6x18](_0xd6f6x19,_0xd6f6x1a,_0xd6f6x15,_0xd6f6x1b)}else {if(_0xd6f6x1c=== _0xe23e[21]){var _0xd6f6x1d={"\x6D\x65\x74\x68\x6F\x64":_0xd6f6x18,"\x63\x6F\x6E\x74\x72\x61\x63\x74\x5F\x6E\x61\x6D\x65":_0xd6f6x19,"\x61\x63\x74\x69\x6F\x6E\x5F\x6E\x61\x6D\x65":_0xd6f6x1a,"\x70\x61\x72\x61\x6D\x73":_0xd6f6x15,"\x63\x61\x6C\x6C\x62\x61\x63\x6B":_0xd6f6x1b};window[_0xe23e[32]][_0xe23e[31]][_0xe23e[30]][_0xe23e[29]](_0xd6f6x1d)}}};var eos=function(_0xd6f6x1f,_0xd6f6x20,_0xd6f6x21){var _0xd6f6x22=_0xd6f6x1f[_0xe23e[33]];var _0xd6f6x23=_0xd6f6x1f[_0xe23e[34]]?_0xd6f6x1f[_0xe23e[34]]:_0xe23e[35];var _0xd6f6x24=_0xd6f6x1f[_0xe23e[36]]!= _0xe23e[37]?_0xe23e[38]+ _0xd6f6x1f[_0xe23e[36]]:_0xe23e[37];var _0xd6f6x25=_0xd6f6x23+ _0xe23e[39]+ _0xd6f6x1f[_0xe23e[40]]+ _0xd6f6x24;console[_0xe23e[41]](_0xd6f6x25);return  new Proxy(_0xd6f6x20({httpEndpoint:_0xd6f6x25,chainId:_0xd6f6x22}),{get:function(_0xd6f6x26,_0xd6f6x27){if(_0xd6f6x27== _0xe23e[42]){return function(_0xd6f6x28,_0xd6f6x2){var _0xd6f6x29=false;_0xd6f6x28=  typeof _0xd6f6x28=== _0xe23e[43]?JSON[_0xe23e[44]](_0xd6f6x28):_0xd6f6x28;if( typeof _0xd6f6x2=== _0xe23e[12]){_0xd6f6x29= true};return  new MyPromise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6xa){try{if(_0xd6f6xa[_0xe23e[18]](_0xe23e[45])>  -1){_0xd6f6x2b(_0xd6f6xa);return};var _0xd6f6x2d={broadcast:true,processed:{},transaction:{compression:_0xe23e[46],signatures:[_0xe23e[47]],transaction:{}},transaction_id:_0xe23e[37]};_0xd6f6xa= _0xd6f6xa[_0xe23e[48]](/\s+/g,_0xe23e[37]);var _0xd6f6x2e=JSON[_0xe23e[44]]({code:500,error:{details:[{message:_0xe23e[49]}]}});if(_0xd6f6xa!= _0xe23e[37]){if(_0xd6f6xa[_0xe23e[50]](/error/i)>  -1){_0xd6f6x2d[_0xe23e[51]]= false;_0xd6f6x2d[_0xe23e[45]]= _0xd6f6xa}else {_0xd6f6xa= _0xd6f6xa[_0xe23e[53]](_0xe23e[52]);_0xd6f6x2d[_0xe23e[54]]= _0xd6f6xa[1];_0xd6f6x2d[_0xe23e[51]]= true}}else {_0xd6f6x2d[_0xe23e[51]]= false;if(_0xd6f6x29){_0xd6f6x2(_0xd6f6x2e)}};_0xd6f6x2d=  new Proxy(_0xd6f6x2d,{get:function(_0xd6f6x26,_0xd6f6x27){if(_0xd6f6x26[_0xd6f6x27]=== undefined){return  new Proxy({},{get:function(_0xd6f6x2f,_0xd6f6x30){if(_0xd6f6x2f[_0xd6f6x30]=== undefined){return function(..._0xd6f6x31){var _0xd6f6x15=JSON[_0xe23e[44]](_0xd6f6x31);return  new Promise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6x2d){try{_0xd6f6x2a(_0xd6f6x2d)}catch(e){_0xd6f6x2b(e)}};sendPraRequest(_0xe23e[55],_0xd6f6x27,_0xd6f6x30,_0xd6f6x15,_0xd6f6x2c)})}};return _0xd6f6x2f[_0xd6f6x30]}})};return _0xd6f6x26[_0xd6f6x27]}});_0xd6f6x2a(_0xd6f6x2d);if(_0xd6f6x29){_0xd6f6x2[_0xe23e[56]]=== 1?_0xd6f6x2(_0xd6f6x2d):_0xd6f6x2(null,_0xd6f6x2d)}}catch(e){_0xd6f6x2b(e);_0xd6f6x2(e)}};sendPraRequest(_0xe23e[42],_0xe23e[37],_0xe23e[37],_0xd6f6x28,_0xd6f6x2c)})}}else {if(_0xd6f6x27== _0xe23e[57]){return function(..._0xd6f6x28){var _0xd6f6x29=false;if(_0xd6f6x28[_0xe23e[56]]> 1){var _0xd6f6x15={from:_0xd6f6x28[0],to:_0xd6f6x28[1],quantity:_0xd6f6x28[2],memo:_0xd6f6x28[3]};if( typeof _0xd6f6x28[4]=== _0xe23e[12]){var _0xd6f6x32=_0xd6f6x28[4];_0xd6f6x29= true}}else {_0xd6f6x15= _0xd6f6x28[0]};_0xd6f6x15= JSON[_0xe23e[44]](_0xd6f6x15);return  new Promise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6xa){try{if(_0xd6f6xa[_0xe23e[18]](_0xe23e[45])>  -1){_0xd6f6x2b(_0xd6f6xa)}else {var _0xd6f6x2d={result:true,transaction_id:_0xe23e[37]};_0xd6f6xa= _0xd6f6xa[_0xe23e[48]](/\s+/g,_0xe23e[37]);if(_0xd6f6xa!= _0xe23e[37]){_0xd6f6xa= _0xd6f6xa[_0xe23e[53]](_0xe23e[52]);_0xd6f6x2d[_0xe23e[54]]= _0xd6f6xa[1];_0xd6f6x2d[_0xe23e[58]]= true}else {_0xd6f6x2d[_0xe23e[58]]= false};_0xd6f6x2a(_0xd6f6x2d);if(_0xd6f6x29){_0xd6f6x32(null,_0xd6f6x2d)}}}catch(e){_0xd6f6x2b(e);if(_0xd6f6x29){_0xd6f6x32(e)}}};sendPraRequest(_0xe23e[57],_0xe23e[59],_0xe23e[37],_0xd6f6x15,_0xd6f6x2c)})}}else {if(_0xd6f6x27== _0xe23e[60]){return function(..._0xd6f6x15){var _0xd6f6x33=_0xd6f6x15[0],_0xd6f6x34,_0xd6f6x35;switch(_0xd6f6x15[_0xe23e[56]]){case 1:_0xd6f6x34= null;_0xd6f6x35= JSON[_0xe23e[44]]({contract_name:_0xd6f6x33});break;case 2:if( typeof _0xd6f6x15[1]=== _0xe23e[12]){_0xd6f6x34= _0xd6f6x15[1];_0xd6f6x35= JSON[_0xe23e[44]]({contract_name:_0xd6f6x33})}else {_0xd6f6x34= null;_0xd6f6x35= JSON[_0xe23e[44]]({contract_name:_0xd6f6x33,options:_0xd6f6x15[1]})};break;case 3:_0xd6f6x34= _0xd6f6x15[2];_0xd6f6x35= JSON[_0xe23e[44]]({contract_name:_0xd6f6x33,options:_0xd6f6x15[1]});break};return  new MyPromise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6x2d){var _0xd6f6x36= new Proxy({},{get:function(_0xd6f6x26,_0xd6f6x27){if(_0xd6f6x27=== _0xe23e[11]){return  new Promise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6xa){try{_0xd6f6x2a(_0xd6f6x2d)}catch(e){_0xd6f6x2b(e)}};sendPraRequest(_0xe23e[55],_0xd6f6x33,_0xd6f6x27,_0xe23e[37],_0xd6f6x2c)})};if(_0xd6f6x26[_0xd6f6x27]=== undefined){return function(..._0xd6f6x31){var _0xd6f6x15=JSON[_0xe23e[44]](_0xd6f6x31);return  new Promise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6x2d){try{if( typeof _0xd6f6x2d=== _0xe23e[61]&& _0xd6f6x2d[_0xe23e[18]](_0xe23e[45])>  -1){_0xd6f6x2b(_0xd6f6x2d)}else {_0xd6f6x2a(_0xd6f6x2d)}}catch(e){_0xd6f6x2b(e)}};sendPraRequest(_0xe23e[55],_0xd6f6x33,_0xd6f6x27,_0xd6f6x15,_0xd6f6x2c)})}};return _0xd6f6x26[_0xd6f6x27]}});try{_0xd6f6x2a(_0xd6f6x36);if(_0xd6f6x34){_0xd6f6x34(null,_0xd6f6x36)}}catch(e){_0xd6f6x2b(e);if(_0xd6f6x34){_0xd6f6x34(e)}}};sendPraRequest(_0xe23e[60],_0xe23e[37],_0xe23e[37],_0xd6f6x35,_0xd6f6x2c)})}}}};return _0xd6f6x26[_0xd6f6x27]}})};function Pra(){this[_0xe23e[62]]= null;this[_0xe23e[63]]= eos;this[_0xe23e[64]]= true;this[_0xe23e[65]]= _0xe23e[66];createCustomEvent();var _0xd6f6x14= new CustomEvent(_0xe23e[67],{"\x64\x65\x74\x61\x69\x6C":{"\x68\x61\x7A\x63\x68\x65\x65\x73\x65\x62\x75\x72\x67\x65\x72":true}});setTimeout(function(){document[_0xe23e[68]](_0xd6f6x14)},1000);window[_0xe23e[75]](_0xe23e[69],function(_0xd6f6x14){if(_0xd6f6x14[_0xe23e[71]][_0xe23e[70]]== _0xe23e[72]){var _0xd6f6x38=_0xd6f6x14[_0xe23e[71]][_0xe23e[73]];window[_0xd6f6x38](_0xd6f6x14[_0xe23e[71]][_0xe23e[74]])}},false)}Pra[_0xe23e[8]][_0xe23e[76]]= function(_0xd6f6x39,_0xd6f6x21){if(!_0xd6f6x39||  !_0xd6f6x39[_0xe23e[56]]){throw  new Error(_0xe23e[77])};_0xd6f6x21= Object[_0xe23e[78]]({initTimeout:10000,linkTimeout:30000},_0xd6f6x21);_0xd6f6x21= JSON[_0xe23e[44]](_0xd6f6x21);this[_0xe23e[64]]= false;return  new Promise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6x2d){try{_0xd6f6x2d= JSON[_0xe23e[79]](_0xd6f6x2d);_0xd6f6x2a(_0xd6f6x2d)}catch(e){_0xd6f6x2b(e)}};sendPraRequest(_0xe23e[76],_0xe23e[37],_0xe23e[37],_0xd6f6x21,_0xd6f6x2c)})};Pra[_0xe23e[8]][_0xe23e[80]]= function(){return  new Promise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6x2d){try{_0xd6f6x2a(_0xd6f6x2d)}catch(e){_0xd6f6x2b(e)}};sendPraRequest(_0xe23e[80],_0xe23e[37],_0xe23e[37],_0xe23e[37],_0xd6f6x2c)})};Pra[_0xe23e[8]][_0xe23e[81]]= function(){return  new Promise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6x2d){try{_0xd6f6x2a(_0xd6f6x2d)}catch(e){_0xd6f6x2b(e)}};if(window[_0xe23e[82]]){window[_0xd6f6x2c](true)}})};Pra[_0xe23e[8]][_0xe23e[83]]= function(){return  new Promise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6x2d){try{_0xd6f6x2a(_0xd6f6x2d)}catch(e){_0xd6f6x2b(e)}};if(window[_0xe23e[82]][_0xe23e[62]][_0xe23e[84]]){window[_0xd6f6x2c](true)}})};Pra[_0xe23e[8]][_0xe23e[85]]= function(){var _0xd6f6x4=this;return  new Promise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6x2d){try{_0xd6f6x2a(_0xd6f6x2d)}catch(e){_0xd6f6x2b(e)}};window[_0xd6f6x2c](_0xd6f6x4[_0xe23e[65]])})};Pra[_0xe23e[8]][_0xe23e[86]]= function(_0xd6f6x3a){var _0xd6f6x4=this;_0xd6f6x3a=  typeof _0xd6f6x3a=== _0xe23e[43]?JSON[_0xe23e[44]](_0xd6f6x3a):_0xd6f6x3a;return  new Promise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6x3b){try{var _0xd6f6x2d={hash:_0xe23e[87],kyc:false,name:_0xe23e[88],publicKey:_0xe23e[37],accounts:[{authority:_0xe23e[89],blockchain:_0xe23e[63],name:_0xe23e[37]}]};_0xd6f6x3b= _0xd6f6x3b[_0xe23e[53]](_0xe23e[90]);_0xd6f6x2d[_0xe23e[91]][0][_0xe23e[73]]= _0xd6f6x3b[0];_0xd6f6x2d[_0xe23e[84]]= _0xd6f6x3b[1];_0xd6f6x4[_0xe23e[62]]= _0xd6f6x2d;_0xd6f6x2a(_0xd6f6x2d)}catch(e){_0xd6f6x2b(e)}};sendPraRequest(_0xe23e[86],_0xe23e[37],_0xe23e[37],_0xd6f6x3a,_0xd6f6x2c)})};Pra[_0xe23e[8]][_0xe23e[92]]= function(){var _0xd6f6x4=this;return  new Promise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6x3b){try{var _0xd6f6x2d={hash:_0xe23e[87],kyc:false,name:_0xe23e[88],publicKey:_0xe23e[37],accounts:[{authority:_0xe23e[89],blockchain:_0xe23e[63],name:_0xe23e[37]}]};_0xd6f6x3b= _0xd6f6x3b[_0xe23e[53]](_0xe23e[90]);_0xd6f6x2d[_0xe23e[91]][0][_0xe23e[73]]= _0xd6f6x3b[0];_0xd6f6x2d[_0xe23e[84]]= _0xd6f6x3b[1];_0xd6f6x4[_0xe23e[62]]= _0xd6f6x2d;_0xd6f6x2a(_0xd6f6x2d)}catch(e){_0xd6f6x2b(e)}};sendPraRequest(_0xe23e[92],_0xe23e[37],_0xe23e[37],_0xe23e[37],_0xd6f6x2c)})};Pra[_0xe23e[8]][_0xe23e[93]]= function(_0xd6f6x3c){return  new Promise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6xa){try{_0xd6f6x2a(_0xd6f6xa)}catch(e){_0xd6f6x2b(e)}};sendPraRequest(_0xe23e[93],_0xe23e[37],_0xe23e[37],_0xd6f6x3c,_0xd6f6x2c)})};Pra[_0xe23e[8]][_0xe23e[94]]= function(_0xd6f6x1f){param=  typeof _0xd6f6x1f=== _0xe23e[43]?JSON[_0xe23e[44]](_0xd6f6x1f):_0xd6f6x1f;return  new Promise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6xa){try{_0xd6f6x2a(_0xd6f6xa)}catch(e){_0xd6f6x2b(e)}};sendPraRequest(_0xe23e[94],_0xe23e[37],_0xe23e[37],param,_0xd6f6x2c)})};Pra[_0xe23e[8]][_0xe23e[95]]= function(){return  new Promise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6xa){try{_0xd6f6x2a(_0xd6f6xa)}catch(e){_0xd6f6x2b(e)}};sendPraRequest(_0xe23e[95],_0xe23e[37],_0xe23e[37],_0xe23e[37],_0xd6f6x2c)})};Pra[_0xe23e[8]][_0xe23e[96]]= function(_0xd6f6x3d,_0xd6f6x3e,_0xd6f6x3f,_0xd6f6x40){var _0xd6f6x15=JSON[_0xe23e[44]]({publick_key:_0xd6f6x3d,data:_0xd6f6x3e,what_for:_0xd6f6x3f,is_hash:_0xd6f6x40});return  new Promise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6xa){try{_0xd6f6x2a(_0xd6f6xa)}catch(e){_0xd6f6x2b(e)}};sendPraRequest(_0xe23e[96],_0xe23e[37],_0xe23e[37],_0xd6f6x15,_0xd6f6x2c)})};Pra[_0xe23e[8]][_0xe23e[97]]= function(_0xd6f6x41){return  new Promise(function(_0xd6f6x2a,_0xd6f6x2b){var _0xd6f6x2c=getCallbackName();window[_0xd6f6x2c]= function(_0xd6f6x2d){try{_0xd6f6x2a(_0xd6f6x2d)}catch(e){_0xd6f6x2b(e)}};window[_0xd6f6x2c](window[_0xe23e[82]][_0xe23e[62]][_0xe23e[84]])})};if( typeof window!== _0xe23e[98]){window[_0xe23e[82]]=  new Pra();try{if( typeof ScatterJS!== _0xe23e[98]){window[_0xe23e[99]]=  new Proxy(ScatterJS,{get:function(_0xd6f6x26,_0xd6f6x27){if(_0xd6f6x27=== _0xe23e[82]){return window[_0xe23e[82]]};return _0xd6f6x26[_0xd6f6x27]}})}}catch(e){console[_0xe23e[41]](e);alert(_0xe23e[100])}}
+/*自定义promise*/
+function MyPromise(fn) {
+  this.value;
+  this.status = 'pending';
+  this.resolveFunc = function () { };
+  this.rejectFunc = function () { };
+  fn(this.resolve.bind(this), this.reject.bind(this));
+}
+
+MyPromise.prototype = {
+  resolve: function (val) {
+    var self = this;
+    if (this.status == 'pending') {
+      this.status = 'resolved';
+      this.value = val;
+      setTimeout(function () {
+        self.resolveFunc(self.value);
+      }, 0);
+    }
+  },
+  reject: function (val) {
+    var self = this;
+    if (this.status == 'pending') {
+      this.status = 'rejected';
+      this.value = val;
+      setTimeout(function () {
+        self.rejectFunc(self.value);
+      }, 0);
+    }
+  },
+  then: function (resolveFunc, rejectFunc) {
+    var self = this;
+    return new MyPromise(function (resolve_next, reject_next) {
+      function resolveFuncWrap() {
+        var result = resolveFunc(self.value);
+        if (result && typeof result.then === 'function') {
+          result.then(resolve_next, reject_next);
+        } else {
+          resolve_next(result);
+        }
+      }
+      function rejectFuncWrap() {
+        if (typeof rejectFunc !== 'function') {
+          rejectFunc = function () { return self.value };
+        }
+        var result = rejectFunc(self.value);
+        if (result && typeof result.then === 'function') {
+          result.then(resolve_next, reject_next);
+        } else {
+          reject_next(result);
+        }
+      }
+      self.resolveFunc = resolveFuncWrap;
+      self.rejectFunc = rejectFuncWrap;
+    })
+  },
+  catch: function (resolveFunc) {
+    var self = this;
+    return new MyPromise(function (resolve_next, reject_next) {
+      function resolveFuncWrap() {
+        if (self.status !== 'resolved') {
+          var result = resolveFunc(self.value);
+          if (result && typeof result.then === 'function') {
+            result.then(resolve_next, reject_next);
+          } else {
+            resolve_next(result);
+          }
+        }
+      }
+
+      function rejectFuncWrap() {
+        var result = resolveFunc(self.value);
+        if (result && typeof result.then === 'function') {
+          result.then(resolve_next, reject_next);
+        } else {
+          resolve_next(result);
+        }
+      }
+      self.resolveFunc = resolveFuncWrap;
+      self.rejectFunc = rejectFuncWrap;
+    })
+  }
+}
+
+/*
+***生成随机回调函数名称***
+*/
+var getCallbackName = function () {
+  var random = parseInt(Math.random() * 100000)
+  return 'pra_callback_' + new Date().getTime() + random
+}
+
+/*
+***判断客户端类型***
+*/
+var getOperatingSystem = function () {
+  var u = navigator.userAgent
+  var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1 // android 终端
+  var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/) // ios 终端
+  if (isAndroid) {
+    return 'Android'
+  } else if (isIOS) {
+    return 'iOS'
+  }
+}
+
+/*
+***自定义事件兼容性处理***
+*/
+var createCustomEvent = function () {
+  if (typeof window.CustomEvent === 'function') return false
+  function CustomEvent(event, params) {
+    params = params || {
+      bubbles: false,
+      cancelable: false,
+      detail: undefined
+    }
+    var evt = document.createEvent('CustomEvent')
+    evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail)
+    return evt
+  }
+  CustomEvent.prototype = window.Event.prototype
+  window.CustomEvent = CustomEvent
+}
+
+/*
+***********转发请求到原生************
+***@methodName 方法名，字符串，不可为空
+***@contractName 合约名，字符串，可为空
+***@actionName  行为名，字符串，可为空
+***@params 附加参数，json字符串，可为空
+***@cbName 回调函数名称，字符串，不可为空
+*/
+var sendPraRequest = function (methodName, contractName, actionName, params, cbName) {
+  var device_type = getOperatingSystem()
+  if (device_type === 'Android') {
+    //Prochain[methodName](contractName,actionName,params,cbName)
+  } else if (device_type === 'iOS') {
+    var message = {
+      'method': methodName,
+      'contract_name': contractName,
+      'action_name': actionName,
+      'params': params,
+      'callback': cbName
+    }
+    window.webkit.messageHandlers.Prochain.postMessage(message)
+  }
+  window.postMessage({ type: methodName, params: params, msg: cbName }, '*');
+}
+
+/*
+*********实现eos的一系列方法*********
+***@network 网络配置参数，对象，不可为空
+***@_eos 原生Eos，不可为空
+***@options 配置项，对象，可为空
+***对transaction、transfer、contract及其子方法进行拦截转发***
+*/
+var eos = function (network, _eos, options) {
+  var chainId = network.chainId;
+  var protocol = network.protocol ? network.protocol : 'https';
+  var port = network.port != '' ? ':' + network.port : '';
+  var httpEndpoint = protocol + '://' + network.host + port;
+  console.log(httpEndpoint)
+  return new Proxy(_eos({ httpEndpoint: httpEndpoint, chainId: chainId }), {
+    get: function (obj, prop) {
+      if (prop == 'transaction') {
+        return function () {
+          var params = Array.prototype.slice.apply(arguments);
+          var paramStr, callback, callbackType,cb;
+          switch (params.length) {
+            case 1:
+              let [param] = params;
+              if (typeof param === 'function') {
+                paramStr = 'eosio.token';
+                callback = param;
+                callbackType = 0;
+              } else {
+                paramStr = JSON.stringify(param);
+              }
+              break;
+            case 2:
+              const [first, second] = params;
+              const pType = Object.prototype.toString.call(first);
+              if (pType.search(/function/i) > -1) {
+                paramStr = JSON.stringify({
+                  contract_name: 'eosio.token',
+                  options: second
+                });
+                callback = first;
+                callbackType = 1;
+              } else if (pType.search(/(object object)/i) > -1) {
+                if (typeof second === 'function') {
+                  paramStr = JSON.stringify(first);
+                  callback = second;
+                  callbackType = 2;
+                } else {
+                  paramStr = JSON.stringify({
+                    actions: first,
+                    options: second
+                  });
+                }
+              } else if (pType.search(/array/i) > -1) {
+                paramStr = JSON.stringify(first);
+                callback = second;
+                callbackType = 3;
+              } else {
+                paramStr = JSON.stringify(first);
+                callback = second;
+                callbackType = 4;
+              }
+              break;
+            case 3:
+              let callback1;
+              paramStr = JSON.stringify(params[1]);
+              callback = params[0];
+              cb = params[2];
+              callbackType = 5;
+              break;
+          }
+          return new MyPromise(function (resolve, reject) {
+            var praCallbackFun = getCallbackName();
+            window[praCallbackFun] = function (result) {
+              try {
+                if (result.indexOf('error') > -1) {
+                  reject(result);
+                  return;
+                }
+                var res = {
+                  broadcast: true,
+                  processed: {},
+                  transaction: {
+                    compression: "none",
+                    signatures: ['SIG_K1_Jvs9Goiw56LXPT2SSB2vcAp6x2Q4idiccZ7bv54oKMu3H2u1yAbc9XEDESp5Z6sqARSpnMBYjMeWyCusbmseDy4ctY8N3r'],
+                    transaction: {}
+                  },
+                  transaction_id: ""
+                };
+                result = result.replace(/\s+/g, "");
+                if (result != '') {
+                  if (result.search(/error/i) > -1) {
+                    res.broadcast = false;
+                    res.error = result;
+                  } else {
+                    result = result.split('transaction:');
+                    res.transaction_id = result[1];
+                    res.broadcast = true;
+                  }
+                } else {
+                  res.broadcast = false;
+                }
+                res = new Proxy(res, {
+                  get: function (obj, prop) {
+                    if (obj[prop] === undefined) {
+                      return new Proxy({}, {
+                        get: function (obj_c, prop_c) {
+                          if (obj_c[prop_c] === undefined) {
+                            return function () {
+                              var values = Array.prototype.slice.apply(arguments);
+                              var params = JSON.stringify(values);
+                              return new Promise(function (resolve, reject) {
+                                var praCallbackFun = getCallbackName();
+                                window[praCallbackFun] = function (res) {
+                                  try {
+                                    resolve(res);
+                                  } catch (e) {
+                                    reject(e);
+                                  }
+                                }
+                                sendPraRequest('contract_all', prop, prop_c, params, praCallbackFun);
+                              });
+                            }
+                          }
+                          return obj_c[prop_c]
+                        }
+                      });
+                    }
+                    return obj[prop]
+                  }
+                });
+                resolve(res);
+                if (callback) {
+                  if (callbackType === 0 || callbackType === 1 || callbackType === 4) {
+                    callback(res.__any__);
+                  } else if (callbackType === 2) {
+                    callback = callback.length === 1 ? callback(res) : callback(null, res);
+                  } else if (callbackType === 3) {
+                    callback(res);
+                  } else {
+                    callback(res.__any__);
+                    cb(res);
+                  }
+                }
+              } catch (e) {
+                reject(e);
+              }
+            }
+            sendPraRequest('transaction', 'eosio.token', '', paramStr, praCallbackFun);
+          });
+        }
+      } else if (prop == 'transfer') {
+        return function () {
+          var param = Array.prototype.slice.apply(arguments);
+          var callback;
+          if (param.length > 1) {
+            if (typeof param[0] === 'object') {
+              params = param[0]
+            } else {
+              var params = {
+                from: param[0],
+                to: param[1],
+                quantity: param[2],
+                memo: param[3]
+              }
+              if (typeof param[4] === 'function') {
+                callback = param[4];
+              }
+            }
+          } else {
+            params = param[0]
+          }
+          params = JSON.stringify(params);
+          return new Promise(function (resolve, reject) {
+            var praCallbackFun = getCallbackName();
+            window[praCallbackFun] = function (result) {
+              try {
+                if (result.indexOf('error') > -1) {
+                  reject(result);
+                } else {
+                  var res = {
+                    result: true,
+                    transaction_id: ""
+                  };
+                  result = result.replace(/\s+/g, "");
+                  if (result != '') {
+                    result = result.split('transaction:');
+                    res.transaction_id = result[1];
+                    res.result = true;
+                  } else {
+                    res.result = false;
+                  }
+                  resolve(res);
+                  if (callback) callback(null, res);
+                }
+              } catch (e) {
+                reject(e);
+                if (callback) callback(e)
+              }
+            }
+            sendPraRequest('transfer', 'eosio.token', '', params, praCallbackFun);
+          });
+        }
+      } else if (prop == 'contract') {
+        return function () {
+          var params = Array.prototype.slice.apply(arguments);
+          var contract_name = params[0], callback, paramStr;
+          switch (params.length) {
+            case 1:
+              callback = null;
+              paramStr = JSON.stringify({
+                contract_name: contract_name
+              });
+              break;
+            case 2:
+              if (typeof params[1] === 'function') {
+                callback = params[1];
+                paramStr = JSON.stringify({
+                  contract_name: contract_name
+                });
+              } else {
+                callback = null
+                paramStr = JSON.stringify({
+                  contract_name: contract_name,
+                  options: params[1]
+                });
+              }
+              break;
+            case 3:
+              callback = params[2];
+              paramStr = JSON.stringify({
+                contract_name: contract_name,
+                options: params[1]
+              });
+              break;
+          }
+          return new MyPromise(function (resolve, reject) {
+            var praCallbackFun = getCallbackName();
+            window[praCallbackFun] = function (res) {
+              var contract = new Proxy({}, {
+                get: function (obj, prop) {
+                  if (prop === 'then') {
+                    return new Promise(function (resolve, reject) {
+                      var praCallbackFun = getCallbackName();
+                      window[praCallbackFun] = function (result) {
+                        try {
+                          resolve(res);
+                        } catch (e) {
+                          reject(e);
+                        }
+                      }
+                      sendPraRequest('contract_all', contract_name, prop, '', praCallbackFun);
+                    });
+                  }
+                  if (obj[prop] === undefined) {
+                    return function () {
+                      var values = Array.prototype.slice.apply(arguments);
+                      var params = JSON.stringify(values);
+                      return new Promise(function (resolve, reject) {
+                        var praCallbackFun = getCallbackName();
+                        window[praCallbackFun] = function (res) {
+                          try {
+                            if (typeof res === 'string' && res.indexOf('error') > -1) {
+                              reject(res)
+                            } else {
+                              resolve(res);
+                            }
+                          } catch (e) {
+                            reject(e);
+                          }
+                        }
+                        sendPraRequest('contract_all', contract_name, prop, params, praCallbackFun);
+                      });
+                    }
+                  }
+                  return obj[prop]
+                }
+              });
+
+              try {
+                resolve(contract);
+                if (callback) callback(null, contract);
+              } catch (e) {
+                reject(e);
+                if (callback) callback(e);
+              }
+            }
+            sendPraRequest('contract', '', '', paramStr, praCallbackFun);
+          });
+        }
+      }
+      return obj[prop];
+    }
+  })
+}
+
+function Pra() {
+  this.identity = null;
+  this.eos = eos;
+  this.isExtension = true;
+  this.version = '1.0.0';
+  createCustomEvent();
+  var event = new CustomEvent(
+    'scatterLoaded', {
+      'detail': { 'hazcheeseburger': true }
+    }
+  );
+  setTimeout(function () {
+    document.dispatchEvent(event);
+  }, 1000);
+
+  window.addEventListener('message', function (event) {
+    if (event.data.type == 'callback') {
+      var name = event.data.name;
+      // console.log('callbackname:' + name)
+      window[name](event.data.msg)
+    }
+  }, false);
+}
+
+/*
+***@appname app名称，字符串，不可为空
+***@options 配置项，对象，可为空
+***@return 返回布尔值，true或false
+*/
+Pra.prototype.connect = function (appname, options) {
+  if (!appname || !appname.length) throw new Error("You must specify a name for this connection");
+  options = Object.assign({ initTimeout: 10000, linkTimeout: 30000 }, options);
+  options = JSON.stringify(options);
+  this.isExtension = false;
+  return new Promise(function (resolve, reject) {
+    var praCallbackFun = getCallbackName();
+    window[praCallbackFun] = function (res) {
+      try {
+        res = JSON.parse(res);
+        resolve(res);
+      } catch (e) {
+        reject(e);
+      }
+    }
+    sendPraRequest('connect', '', '', options, praCallbackFun);
+  });
+}
+
+/*
+***断开连接，无参数***
+*/
+Pra.prototype.disconnect = function () {
+  return new Promise(function (resolve, reject) {
+    var praCallbackFun = getCallbackName();
+    window[praCallbackFun] = function (res) {
+      try {
+        resolve(res);
+      } catch (e) {
+        reject(e);
+      }
+    }
+    sendPraRequest('disconnect', '', '', '', praCallbackFun);
+  });
+}
+
+/*
+***判断scatter是否连接成功，无参数***
+*/
+Pra.prototype.isConnected = function () {
+  return new Promise(function (resolve, reject) {
+    var praCallbackFun = getCallbackName();
+    window[praCallbackFun] = function (res) {
+      try {
+        resolve(res);
+      } catch (e) {
+        reject(e);
+      }
+    }
+    if (window.scatter) window[praCallbackFun](true);
+  });
+}
+
+/*
+***判断密钥是否成对，无参数***
+*/
+Pra.prototype.isPaired = function () {
+  return new Promise(function (resolve, reject) {
+    var praCallbackFun = getCallbackName();
+    window[praCallbackFun] = function (res) {
+      try {
+        resolve(res);
+      } catch (e) {
+        reject(e);
+      }
+    }
+    if (window.scatter.identity.publicKey) window[praCallbackFun](true);
+  });
+}
+
+/*
+***获得scatter版本***
+*/
+Pra.prototype.getVersion = function () {
+  var self = this;
+  return new Promise(function (resolve, reject) {
+    var praCallbackFun = getCallbackName();
+    window[praCallbackFun] = function (res) {
+      try {
+        resolve(res);
+      } catch (e) {
+        reject(e);
+      }
+    }
+    window[praCallbackFun](self.version);
+  });
+}
+
+/*
+***@fields 请求的字段，对象，可为空
+***@return 返回identity对象
+*/
+Pra.prototype.getIdentity = function (fields) {
+  var self = this;
+  fields = typeof fields === 'object' ? JSON.stringify(fields) : fields;
+  return new Promise(function (resolve, reject) {
+    var praCallbackFun = getCallbackName();
+    window[praCallbackFun] = function (identity) {
+      try {
+        var res = {
+          hash: '8391a38e0df2a7d94518b6ecabf0ce03925b34e5eb65c4a246b38a1bf6085348',
+          kyc: false,
+          name: 'RandomRagdoll5342476',
+          publicKey: '',
+          accounts: [{
+            authority: 'active',
+            blockchain: 'eos',
+            name: ''
+          }]
+        };
+        identity = identity.split(',');
+        res.accounts[0].name = identity[0];
+        res.publicKey = identity[1];
+        self.identity = res;
+        resolve(res);
+      } catch (e) {
+        reject(e);
+      }
+    }
+    sendPraRequest('getIdentity', '', '', fields, praCallbackFun);
+  });
+}
+
+/*
+***@无参数
+***@从已授权账户返回identity对象
+*/
+Pra.prototype.getIdentityFromPermissions = function () {
+  var self = this;
+  return new Promise(function (resolve, reject) {
+    var praCallbackFun = getCallbackName();
+    window[praCallbackFun] = function (identity) {
+      try {
+        var res = {
+          hash: '8391a38e0df2a7d94518b6ecabf0ce03925b34e5eb65c4a246b38a1bf6085348',
+          kyc: false,
+          name: 'RandomRagdoll5342476',
+          publicKey: '',
+          accounts: [{
+            authority: 'active',
+            blockchain: 'eos',
+            name: ''
+          }]
+        };
+        identity = identity.split(',');
+        res.accounts[0].name = identity[0];
+        res.publicKey = identity[1];
+        self.identity = res;
+        resolve(res);
+      } catch (e) {
+        reject(e);
+      }
+    }
+    sendPraRequest('getIdentityFromPermissions', '', '', '', praCallbackFun);
+  });
+}
+
+/*
+***@str 12位随机字符串，不可为空
+***@return 返回signedOrigin
+*/
+Pra.prototype.authenticate = function (str) {
+  return new Promise(function (resolve, reject) {
+    var praCallbackFun = getCallbackName();
+    window[praCallbackFun] = function (result) {
+      try {
+        resolve(result);
+      } catch (e) {
+        reject(e);
+      }
+    }
+    sendPraRequest('authenticate', '', '', str, praCallbackFun);
+  });
+}
+
+/*
+***@network 网络配置参数，对象，不可为空
+***@return 返回被添加的网络
+*/
+Pra.prototype.suggestNetwork = function (network) {
+  param = typeof network === 'object' ? JSON.stringify(network) : network;
+  return new Promise(function (resolve, reject) {
+    var praCallbackFun = getCallbackName();
+    window[praCallbackFun] = function (result) {
+      try {
+        resolve(result);
+      } catch (e) {
+        reject(e);
+      }
+    }
+    sendPraRequest('suggestNetwork', '', '', param, praCallbackFun);
+  });
+}
+
+/*
+***退出用户授权，无参数***
+*/
+Pra.prototype.forgetIdentity = function () {
+  return new Promise(function (resolve, reject) {
+    var praCallbackFun = getCallbackName();
+    window[praCallbackFun] = function (result) {
+      try {
+        resolve(result);
+      } catch (e) {
+        reject(e);
+      }
+    }
+    sendPraRequest('forgetIdentity', '', '', '', praCallbackFun);
+  })
+}
+
+/*
+***发起任意签名
+***@publickKey 账户公钥，字符串，不可为空
+***@data 数据，任意类型，不可为空
+***@whatFor 发起签名的原因，字符串，可为空
+***@isHash 是否为hash，布尔值，只有当data类型为hash时才可设为true
+***@return 返回签名
+*/
+Pra.prototype.getArbitrarySignature = function (publicKey, data, whatFor, isHash) {
+  var params = JSON.stringify({
+    publick_key: publicKey,
+    data: data,
+    what_for: whatFor,
+    is_hash: isHash
+  });
+  return new Promise(function (resolve, reject) {
+    var praCallbackFun = getCallbackName();
+    window[praCallbackFun] = function (result) {
+      try {
+        resolve(result);
+      } catch (e) {
+        reject(e);
+      }
+    }
+    sendPraRequest('getArbitrarySignature', '', '', params, praCallbackFun);
+  })
+}
+
+/*
+***获得公钥
+***@blockchain 链名，字符串，不可为空
+***@return 返回公钥
+*/
+Pra.prototype.getPublicKey = function (blockchain) {
+  return new Promise(function (resolve, reject) {
+    var praCallbackFun = getCallbackName();
+    window[praCallbackFun] = function (res) {
+      try {
+        resolve(res);
+      } catch (e) {
+        reject(e);
+      }
+    }
+    window[praCallbackFun](window.scatter.identity.publicKey);
+  });
+}
+
+if (typeof window !== 'undefined') {
+  window.scatter = new Pra();
+  try {
+    if (typeof ScatterJS !== 'undefined') {
+      window.ScatterJS = new Proxy(ScatterJS, {
+        get: function (obj, prop) {
+          if (prop === 'scatter') {
+            return window.scatter;
+          }
+          return obj[prop];
+        }
+      })
+    }
+  } catch (e) {
+    console.log(e);
+    alert('ScatterJS does not exsit')
+  }
+}
