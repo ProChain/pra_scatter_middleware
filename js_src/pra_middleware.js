@@ -134,7 +134,7 @@ var createCustomEvent = function () {
 var sendPraRequest = function (methodName, contractName, actionName, params, cbName) {
   var device_type = getOperatingSystem()
   if (device_type === 'Android') {
-    //Prochain[methodName](contractName,actionName,params,cbName)
+    Prochain[methodName](contractName,actionName,params,cbName)
   } else if (device_type === 'iOS') {
     var message = {
       'method': methodName,
@@ -145,7 +145,6 @@ var sendPraRequest = function (methodName, contractName, actionName, params, cbN
     }
     window.webkit.messageHandlers.Prochain.postMessage(message)
   }
-  window.postMessage({ type: methodName, params: params, msg: cbName }, '*');
 }
 
 /*
@@ -195,7 +194,7 @@ var eos = function (network, _eos, options) {
                   callbackType = 2;
                 } else {
                   paramStr = JSON.stringify({
-                    actions: first,
+                    actions: first.actions,
                     options: second
                   });
                 }
@@ -250,7 +249,7 @@ var eos = function (network, _eos, options) {
                 }
                 res = new Proxy(res, {
                   get: function (obj, prop) {
-                    if (obj[prop] === undefined) {
+                    if (obj[prop] === undefined && prop !== 'toJSON') {
                       return new Proxy({}, {
                         get: function (obj_c, prop_c) {
                           if (obj_c[prop_c] === undefined) {
@@ -261,7 +260,11 @@ var eos = function (network, _eos, options) {
                                 var praCallbackFun = getCallbackName();
                                 window[praCallbackFun] = function (res) {
                                   try {
-                                    resolve(res);
+                                    if (res.search(/error/i) > -1) {
+                                      reject(res);
+                                    } else {
+                                      resolve(res);
+                                    }
                                   } catch (e) {
                                     reject(e);
                                   }
